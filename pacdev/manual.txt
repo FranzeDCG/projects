@@ -1,0 +1,21 @@
+pacdev!-manual
+The E-manual for anyone trying to mod pacbob!
+To mod everything as it should be modded, carefully do the steps noted below.
+
+Steps:
+1. Open the Minecraft Launcher and create a new installation
+ 1.1 Set the installation to the current pacsnap, e.g. 1.21.4
+ 1.2 Name it anything you want and leave the rest the same
+2. Open Process Explorer (files\devtools\apps\Process Explorer\procexp64.exe)
+ 2.1 In Process Explorer, scroll and search for "Minecraft.exe"
+ 2.2 Underneath "Minecraft.exe", search for "javaw" and click on it's properties
+ 2.3 Copy the command line in the "javaw" properties
+3. Open any text editor
+ 3.1 Paste the line into the text editor (Minecraft and Process Explorer are allowed to close now)
+ 3.2 Change "--demo" at the end of the line with "--minecraft"
+ 3.3 Search for "--username" and replace "Player" (next to "--username") with "%muser%"
+ 3.4 Replace the new chunk of lines with the old one in "x86\files\pacbob! Minecraft Launcher.bat"
+ 3.5 Press "Ctrl+S" to save the modded pacbob! Launcher.
+
+Now if all above is finished, go back to the x86 folder, and run "pacbob! Minecraft Launcher".
+Make sure there aren't any other Minecraft windows opened, if there are, close them before you run pacbob!.
